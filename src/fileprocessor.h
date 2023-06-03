@@ -3,6 +3,11 @@
 
 #define MAX_FILELENGTH 500
 
+#define CODE_TEXT 0
+#define CODE_INC 1
+#define CODE_NAME 2
+#define CODE_EXT 3
+
 struct renameCode {
     int code;
     char* txt;
