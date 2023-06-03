@@ -8,6 +8,11 @@
 #include <sys/types.h>
 #include <unistd.h>
 
+#define CODE_TEXT 0
+#define CODE_INC 1
+#define CODE_NAME 2
+#define CODE_EXT 3
+
 int isFile(const char* path)
 {
     struct stat path_stat;
