@@ -16,9 +16,11 @@ int isFile(const char *path)
 }
 
 char buffer[200][MAX_FILELENGTH];
+int bufferIndex = 0;
 
 void scandirMy(char *dirname)
 {
+	bufferIndex=0
 	DIR *dir;
 	struct dirent *ent;
 	
