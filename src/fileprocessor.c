@@ -15,6 +15,8 @@ int isFile(const char *path)
     return S_ISREG(path_stat.st_mode);
 }
 
+char buffer[200][MAX_FILELENGTH];
+
 void scandirMy(char *dirname)
 {
 	DIR *dir;
