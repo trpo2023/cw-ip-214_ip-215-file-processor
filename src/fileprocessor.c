@@ -127,4 +127,3 @@ void massRename(char* pattern)
         rename(buffer[i], newFileName);
     }
 }
-
