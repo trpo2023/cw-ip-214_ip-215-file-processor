@@ -8,21 +8,21 @@ extern char buffer[200][MAX_FILELENGTH];
 
 CTEST(isFile, testFile1)
 {
-    int result = isFile("testDir/notFile");
+    int result = isFile("test/testDir/notFile");
     int expected = 0;
     ASSERT_EQUAL(expected, result);
 }
 
 CTEST(isFile, testFile2)
 {
-    int result = isFile("testDir/file");
+    int result = isFile("test/testDir/file");
     int expected = 1;
     ASSERT_EQUAL(expected, result);
 }
 
 CTEST(scanDirMy, scanDir1)
 {
-    scandirMy("tmpTests/test0/");
+    scandirMy("test/tmpTests/test0/");
     int result = bufferIndex;
     int expected = 2;
     ASSERT_EQUAL(expected, result);
@@ -30,7 +30,7 @@ CTEST(scanDirMy, scanDir1)
 
 CTEST(scanDirMy, scanDir2)
 {
-    scandirMy("tmpTests/test1/");
+    scandirMy("test/tmpTests/test1/");
     int result = bufferIndex;
     int expected = 3;
     ASSERT_EQUAL(expected, result);
